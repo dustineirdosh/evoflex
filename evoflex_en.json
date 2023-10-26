@@ -1,0 +1,83 @@
+{
+  "questions": [
+    {
+        "question": "Peacock's Feathers",
+        "categories": ["external agency - conspecific"],
+        "instruction": "Select ALL of the responses that you agree with.",
+        "question_text": "Male Peacocks exhibit an incredibly colorful display of feathers. Ancestral males of the modern Peacock did not always have such feathers. How did the male Peacock's feathers evolve?",
+        "options": [
+          "A: The ancestors of female peacocks had a preference for males with colorful feathers. Male peacocks that happened to have more colorful feathers happened to breed more than the others and had more offspring.",
+          "B: The ancestors of female peacocks realized their offspring would survive and reproduce better if they mated with males who had colorful feathers, because of this, over many generations of genetic changes, the males developed more colorful feathers.",
+          "C: The ancestors of male peacocks wanted to attract more females, because of this, over many generations, their descendants continued to develop more colorful feathers that the females were drawn to.",
+          "D: The ancestors of male peacocks increasingly needed colorful feathers in order to find a female mate, because of this, over many generations of genetic changes, they developed more colorful feathers.",
+          "E: The behaviors of the ancestors of peacocks had no role in the evolution of the male peacock feathers, it happened only through random genetic mutation and natural selection over many generations."
+        ]
+      },
+      {
+        "question": "Giraffe's neck",
+        "categories": ["internal agency"],
+        "instruction": "Select ALL of the responses that you agree with.",
+        "question_text": "Giraffes exhibit an incredibly long neck that allows them to forage high in trees that others cannot reach. Ancestors of the modern giraffe did not always have such necks. How did the giraffe's neck evolve?",
+        "options": [
+          "A: The ancestors of giraffes engaged in foraging as high in the trees as they could reach. Some of those giraffes randomly had longer necks than others and got access to more food than others, so they were able to survive better and had more offspring.",
+          "B: The ancestors of giraffes engaged in foraging as high in the trees as they could reach, and because of this behavior, the necks continued to get longer over many generations.",
+          "C: The ancestors of giraffes wanted to reach higher into the trees, because of this, over many generations of genetic changes, they developed longer necks that functioned to optimize this behavior.",
+          "D: The ancestors of giraffes needed longer necks in order to get enough food and survive, because of this, over many generations of genetic changes, they developed long necks.",
+          "E: The behaviors of the ancestors of giraffes had no role in the evolution of the long neck, it happened only through random genetic mutation and natural selection over many generations."
+        ]
+      },
+      {
+        "question": "Polar bear fur thickness",
+        "categories": ["no agency"],
+        "instruction": "Select ALL of the responses that you agree with.",
+        "question_text": "Polar bears exhibit a thick fur that allows them to survive under the cold temperature conditions of the arctic. Ancestors of the modern polar bear did not always have such thick fur. How did the fur of the polar bears evolve?",
+        "options": [
+          "A: The ancestors of polar bears engaged in behavior that made their fur thicker, and because of this, they survived better and had more offspring who also had thicker fur.",
+          "B: The ancestors of polar bears realized they could survive better and have more healthy offspring if they had thicker fur, because of this, over many generations of genetic changes, they grew thicker fur.",
+          "C: The ancestors of polar bears wanted to be warm, because of this, over many generations of genetic changes, they developed thicker fur.",
+          "D: The ancestors of polar bears needed to stay warm in order to survive in the arctic, because of this, over many generations of genetic changes, they developed thick fur.",
+          "E: The behaviors of the ancestors of polar bears had no role in the evolution of the thickness of the fur, it happened only through random genetic mutation and natural selection over many generations."
+        ]
+      },
+      {
+        "question": "Polar bear fur color",
+        "categories": ["external agency"],
+        "instruction": "Select ALL of the responses that you agree with.",
+        "question_text": "Polar bears exhibit a white fur that allows them to be camouflaged in the white snow of the arctic and therefore to catch more prey. Ancestors of the modern polar bear did not always have such white fur. How did the fur color of the polar bears evolve?",
+        "options": [
+          "A: The ancestors of polar bears happened to have whiter fur than others. Since prey animals in the arctic cannot distinguish white fur from snow, these whiter polar bears tended to be more successful in hunting than the others and had more offspring.",
+          "B: The ancestors of polar bears realized they could be more successful in hunting and have more healthy offspring if they had whiter fur to camouflage, because of this, over many generations of genetic changes, they grew whiter fur.",
+          "C: The ancestors of polar bears wanted to hunt more prey, because of this, over many generations of genetic changes, they developed whiter fur over time in order to hunt more prey.",
+          "D: The ancestors of polar bears needed to hunt prey in order to survive in the arctic, because of this, over many generations of genetic changes, they developed white fur that enabled them to hunt more prey.",
+          "E: The behaviors of the ancestors of polar bears or prey had no role in the evolution of the color of the fur, it happened only through random genetic mutation and natural selection over many generations."
+        ]
+      },
+      {
+        "question": "Upright walking",
+        "categories": ["internal agency"],
+        "instruction": "Select ALL of the responses that you agree with.",
+        "question_text": "Over the course of human evolution, our ancient ancestors went from apes that survived by walking on all fours (as all other modern great apes still do), to become apes that depend on walking upright. How did our ability for upright walking evolve?",
+        "options": [
+          "A: The ancestors of humans engaged in upright walking to get food and escape predators. Some of them randomly had bodies that were better able to walk upright, so they were able to survive better and had more offspring.",
+          "B: The ancestors of humans engaged in walking upright in order to get food and escape predators, and because of this behavior, their bodies continued to get better at upright walking over many generations.",
+          "C: The ancestors of humans wanted to walk upright, because of this, over many generations of genetic changes, they developed bodies that helped to optimize this behavior.",
+          "D: The ancestors of humans needed to walk upright in order to survive in new environments, because of this, over many generations of genetic changes, they developed improved abilities for upright walking.",
+          "E: The behaviors of the ancestors of humans had no role in the evolution of upright walking, it happened only through random genetic mutation and natural selection over many generations."
+        ]
+      },
+
+      {
+        "question": "Cheetah running",
+        "categories": ["internal agency", "external agency - prey"],
+        "instruction": "Select ALL of the responses that you agree with.",
+        "question_text": "Cheetahs can run at a speed of 100 km/h. The ancestors of cheetahs were only able to run at about 30 km/h. How did the cheetah ability for fast running evolve?",
+        "options": [
+          "A: The ancestors of cheetahs engaged in running as fast as possible to catch their fast running prey. Some of them randomly had bodies that allowed them to run faster than others, so they were able to catch more prey and had more offspring.",
+          "B: The ancestors of cheetahs engaged in running as fast as possible to catch their fast running prey, and because of this behavior, their bodies continued to get better at running fast.",
+          "C: The ancestors of cheetahs wanted to run as fast as possible, because of this, over many generations of genetic changes, they developed bodies that functioned to optimize this behavior.",
+          "D: The ancestors of cheetahs needed to run fast in order to catch prey and survive, because of this, over many generations of genetic changes, they developed the improved abilities for fast running.",
+          "E: The behaviors of the ancestors of cheetahs or their prey had no role in the evolution of running speed, it happened only through random genetic mutation and natural selection over many generations."
+        ]
+      }
+  ]
+}
