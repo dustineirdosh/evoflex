@@ -1,0 +1,299 @@
+{
+  "nodes": [
+    {"id": "Behavior"},
+    {"id": "Environment"},
+    {"id": "Trait"},
+    {"id": "Organism A"},
+    {"id": "Organism B"},
+    {"id": "Trait organism A"},
+    {"id": "Gene"},
+    {"id": "Protein"},
+    {"id": "Phenotype"},
+    {"id": "GRN"},
+    {"id": "Physical laws"},
+    {"id": "Social learning"},
+    {"id": "Language"},
+    {"id": "Teaching"},
+    {"id": "Culture"},
+    {"id": "Entity A"},
+    {"id": "Entity B"},
+    {"id": "Mating partner"},
+    {"id": "Social environment"},
+    {"id": "Agency"},
+    {"id": "Microbiome"},
+    {"id": "Development"},
+    {"id": "Frequency of trait A"},
+    {"id": "Competition between groups"},
+    {"id": "Cooperative groups"},
+    {"id": "Competition within groups"},
+    {"id": "Selfish traits"},
+    {"id": "Cooperative traits"},
+    {"id": "Agent"},
+    {"id": "Body"},
+    {"id": "Goals"},
+    {"id": "Preference"},
+    {"id": "Memory"},
+    {"id": "X"},
+    {"id": "Gene product"}
+  ],
+  "edges": [
+    {"source": "Behavior", "target": "Environment", "relation": "influences experience of", "schema": "Niche selection"},
+    {"source": "Environment", "target": "Trait", "relation": "createsSelectionof", "schema": "Niche selection"},
+    {"source": "Behavior", "target": "Environment", "relation": "influences features of", "schema": "Niche construction"},
+    {"source": "Environment", "target": "Trait", "relation": "createsSelectionof", "schema": "Niche construction"},
+    {"source": "Organism A", "target": "Organism B", "relation": "createsSelectionof", "schema": "Co-Evolution"},
+    {"source": "Organism B", "target": "Organism A", "relation": "createsSelectionof", "schema": "Co-Evolution"},
+    {"source": "Trait organism A", "target": "Organism B", "relation": "enables development of", "schema": "Domestication - simple"},
+    {"source": "Organism B", "target": "Trait organism A", "relation": "createsSelectionof", "schema": "Domestication - simple"},
+    {"source": "Gene", "target": "Protein", "relation": "enables development of", "schema": "Gene to phenotype simple"},
+    {"source": "Protein", "target": "Phenotype", "relation": "enables development of", "schema": "Gene to phenotype simple"},
+    {"source": "GRN", "target": "Trait", "relation": "enables development of", "schema": "Gene to phenotype complex"},
+    {"source": "Gene", "target": "Gene", "relation": "influences development/expression of", "schema": "GRN"},
+    {"source": "Gene", "target": "Gene product", "relation": "influences development/expression of", "schema": "GRN"},
+    {"source": "Gene product", "target": "Gene", "relation": "influences development/expression of", "schema": "GRN"},
+    {"source": "Environment", "target": "Trait", "relation": "enables development of", "schema": "Developmental plasticity"},
+    {"source": "Gene", "target": "Trait", "relation": "enables development of", "schema": "Developmental plasticity"},
+    {"source": "Environment", "target": "Gene", "relation": "influences expression of", "schema": "Developmental plasticity"},
+    {"source": "Physical laws", "target": "Trait", "relation": "enables development of", "schema": "Developmental plasticity"},
+    {"source": "Gene", "target": "Gene", "relation": "enables development/expression of", "schema": "Developmental bias"},
+    {"source": "Gene", "target": "Protein", "relation": "enables development of", "schema": "Developmental bias"},
+    {"source": "Protein", "target": "Trait", "relation": "enables development of", "schema": "Developmental bias"},
+    {"source": "Trait", "target": "Trait", "relation": "enables development of", "schema": "Developmental bias"},
+    {"source": "X", "target": "Trait", "relation": "createsSelectionof", "schema": "Genetic assimilation"},
+    {"source": "Gene", "target": "Trait", "relation": "enables development of", "schema": "Genetic assimilation"},
+    {"source": "Trait", "target": "Gene", "relation": "createsSelectionof", "schema": "Genetic assimilation"},
+    {"source": "Social learning", "target": "Trait", "relation": "enables transmission of", "schema": "Cultural transmission"},
+    {"source": "Language", "target": "Trait", "relation": "enables transmission of", "schema": "Cultural transmission"},
+    {"source": "Teaching", "target": "Trait", "relation": "enables transmission of", "schema": "Cultural transmission"},
+    {"source": "Gene", "target": "Trait", "relation": "enables development of", "schema": "Gene-culture coevolution"},
+    {"source": "Culture", "target": "Trait", "relation": "createsSelectionof", "schema": "Gene-culture coevolution"},
+    {"source": "Trait", "target": "Culture", "relation": "enables development of", "schema": "Gene-culture coevolution"},
+    {"source": "Entity A", "target": "Entity B", "relation": "conveys information to", "schema": "Transmission"},
+    {"source": "Entity A", "target": "Entity B", "relation": "conveys resources to", "schema": "Transmission"},
+    {"source": "Mating partner", "target": "Trait", "relation": "createsSelectionof", "schema": "Sexual selection"},
+    {"source": "Social environment", "target": "Trait", "relation": "createsSelectionof", "schema": "Social selection"},
+    {"source": "Genes", "target": "Trait", "relation": "enables development of", "schema": "Behavior-led evolution"},
+    {"source": "Trait", "target": "Behavior", "relation": "enables development of", "schema": "Behavior-led evolution"},
+    {"source": "Agency", "target": "Behavior", "relation": "motivates", "schema": "Behavior-led evolution"},
+    {"source": "Behavior", "target": "Trait", "relation": "createsSelectionof", "schema": "Behavior-led evolution"},
+    {"source": "Trait", "target": "Gene", "relation": "createsSelectionof", "schema": "Behavior-led evolution"},
+    {"source": "Microbiome", "target": "Trait", "relation": "enables development of", "schema": "Microbiome transmission"},
+    {"source": "Behavior", "target": "Microbiome", "relation": "enables transmission of", "schema": "Microbiome transmission"},
+    {"source": "Development", "target": "Microbiome", "relation": "enables transmission of", "schema": "Microbiome transmission"},
+    {"source": "Environment", "target": "Trait", "relation": "createsSelectionof", "schema": "Microbiome transmission"},
+    {"source": "Frequency of trait A", "target": "Trait A", "relation": "influences selection of", "schema": "Frequency-dependent selection"},
+    {"source": "Competition between groups", "target": "Cooperative groups", "relation": "createsSelectionof", "schema": "Multilevel selection"},
+    {"source": "Competition within groups", "target": "Selfish traits", "relation": "createsSelectionof", "schema": "Multilevel selection"},
+    {"source": "Cooperative groups", "target": "Cooperative traits", "relation": "createsSelectionof", "schema": "Multilevel selection"},
+    {"source": "Cooperative traits", "target": "Cooperative groups", "relation": "enable", "schema": "Multilevel selection"},
+    {"source": "Culture", "target": "Cooperative trait", "relation": "influences development of", "schema": "Cultural multilevel selection"},
+    {"source": "Culture", "target": "Cooperative trait", "relation": "createsSelectionof", "schema": "Cultural multilevel selection"},
+    {"source": "Competition between groups", "target": "Cooperative groups", "relation": "createsSelectionof", "schema": "Cultural multilevel selection"},
+    {"source": "Cooperative groups", "target": "Cooperative traits", "relation": "createsSelectionof", "schema": "Cultural multilevel selection"},
+    {"source": "Cooperative traits", "target": "Cooperative groups", "relation": "enable", "schema": "Cultural multilevel selection"},
+    {"source": "Agent", "target": "Environment", "relation": "senses", "schema": "Agential causation"},
+    {"source": "Agent", "target": "Body", "relation": "senses", "schema": "Agential causation"},
+    {"source": "Agent", "target": "Environment", "relation": "models", "schema": "Agential causation"},
+    {"source": "Agent", "target": "Goals", "relation": "has", "schema": "Agential causation"},
+    {"source": "Goals", "target": "Behavior", "relation": "motivate", "schema": "Agential causation"},
+    {"source": "Behavior", "target": "Environment", "relation": "influences", "schema": "Agential causation"},
+    {"source": "Agent", "target": "Environment", "relation": "predicts", "schema": "Agential causation"},
+    {"source": "Agent", "target": "Behavior", "relation": "learns", "schema": "Agential causation"},
+    {"source": "Agent", "target": "Goal", "relation": "has", "schema": "Agential causation"},
+    {"source": "Agent", "target": "Preference", "relation": "has", "schema": "Agential causation"},
+    {"source": "Agent", "target": "Memory", "relation": "has", "schema": "Agential causation"}
+  ],
+  "schemas": [
+    {
+      "id": "Niche selection",
+      "nodes": ["Behavior", "Environment", "Trait"],
+      "edges": [
+        {"source": "Behavior", "target": "Environment", "relation": "influences experience of"},
+        {"source": "Environment", "target": "Trait", "relation": "createsSelectionof"}
+      ]
+    },
+    {
+      "id": "Niche construction",
+      "nodes": ["Behavior", "Environment", "Trait"],
+      "edges": [
+        {"source": "Behavior", "target": "Environment", "relation": "influences features of"},
+        {"source": "Environment", "target": "Trait", "relation": "createsSelectionof"}
+      ]
+    },
+    {
+      "id": "Co-Evolution",
+      "nodes": ["Organism A", "Organism B"],
+      "edges": [
+        {"source": "Organism A", "target": "Organism B", "relation": "createsSelectionof"},
+        {"source": "Organism B", "target": "Organism A", "relation": "createsSelectionof"}
+      ]
+    },
+    {
+      "id": "Domestication - simple",
+      "nodes": ["Trait organism A", "Organism B"],
+      "edges": [
+        {"source": "Trait organism A", "target": "Organism B", "relation": "enables development of"},
+        {"source": "Organism B", "target": "Trait organism A", "relation": "createsSelectionof"}
+      ]
+    },
+    {
+      "id": "Gene to phenotype simple",
+      "nodes": ["Gene", "Protein", "Phenotype"],
+      "edges": [
+        {"source": "Gene", "target": "Protein", "relation": "enables development of"},
+        {"source": "Protein", "target": "Phenotype", "relation": "enables development of"}
+      ]
+    },
+    {
+      "id": "Gene to phenotype complex",
+      "nodes": ["GRN", "Trait"],
+      "edges": [
+        {"source": "GRN", "target": "Trait", "relation": "enables development of"}
+      ]
+    },
+    {
+      "id": "GRN",
+      "nodes": ["Gene", "Gene product"],
+      "edges": [
+        {"source": "Gene", "target": "Gene", "relation": "influences development/expression of"},
+        {"source": "Gene", "target": "Gene product", "relation": "influences development/expression of"},
+        {"source": "Gene product", "target": "Gene", "relation": "influences development/expression of"}
+      ]
+    },
+    {
+      "id": "Developmental plasticity",
+      "nodes": ["Environment", "Gene", "Trait", "Physical laws"],
+      "edges": [
+        {"source": "Environment", "target": "Trait", "relation": "enables development of"},
+        {"source": "Gene", "target": "Trait", "relation": "enables development of"},
+        {"source": "Environment", "target": "Gene", "relation": "influences expression of"},
+        {"source": "Physical laws", "target": "Trait", "relation": "enables development of"}
+      ]
+    },
+    {
+      "id": "Developmental bias",
+      "nodes": ["Gene", "Protein", "Trait"],
+      "edges": [
+        {"source": "Gene", "target": "Gene", "relation": "enables development/expression of"},
+        {"source": "Gene", "target": "Protein", "relation": "enables development of"},
+        {"source": "Protein", "target": "Trait", "relation": "enables development of"},
+        {"source": "Trait", "target": "Trait", "relation": "enables development of"}
+      ]
+    },
+    {
+      "id": "Genetic assimilation",
+      "nodes": ["X", "Gene", "Trait"],
+      "edges": [
+        {"source": "X", "target": "Trait", "relation": "createsSelectionof"},
+        {"source": "Gene", "target": "Trait", "relation": "enables development of"},
+        {"source": "Trait", "target": "Gene", "relation": "createsSelectionof"}
+      ]
+    },
+    {
+      "id": "Cultural transmission",
+      "nodes": ["Social learning", "Language", "Teaching", "Trait"],
+      "edges": [
+        {"source": "Social learning", "target": "Trait", "relation": "enables transmission of"},
+        {"source": "Language", "target": "Trait", "relation": "enables transmission of"},
+        {"source": "Teaching", "target": "Trait", "relation": "enables transmission of"}
+      ]
+    },
+    {
+      "id": "Gene-culture coevolution",
+      "nodes": ["Gene", "Culture", "Trait"],
+      "edges": [
+        {"source": "Gene", "target": "Trait", "relation": "enables development of"},
+        {"source": "Culture", "target": "Trait", "relation": "createsSelectionof"},
+        {"source": "Trait", "target": "Culture", "relation": "enables development of"}
+      ]
+    },
+    {
+      "id": "Transmission",
+      "nodes": ["Entity A", "Entity B"],
+      "edges": [
+        {"source": "Entity A", "target": "Entity B", "relation": "conveys information to"},
+        {"source": "Entity A", "target": "Entity B", "relation": "conveys resources to"}
+      ]
+    },
+    {
+      "id": "Sexual selection",
+      "nodes": ["Mating partner", "Trait"],
+      "edges": [
+        {"source": "Mating partner", "target": "Trait", "relation": "createsSelectionof"}
+      ]
+    },
+    {
+      "id": "Social selection",
+      "nodes": ["Social environment", "Trait"],
+      "edges": [
+        {"source": "Social environment", "target": "Trait", "relation": "createsSelectionof"}
+      ]
+    },
+    {
+      "id": "Behavior-led evolution",
+      "nodes": ["Genes", "Trait", "Behavior", "Agency"],
+      "edges": [
+        {"source": "Genes", "target": "Trait", "relation": "enables development of"},
+        {"source": "Trait", "target": "Behavior", "relation": "enables development of"},
+        {"source": "Agency", "target": "Behavior", "relation": "motivates"},
+        {"source": "Behavior", "target": "Trait", "relation": "createsSelectionof"},
+        {"source": "Trait", "target": "Gene", "relation": "createsSelectionof"}
+      ]
+    },
+    {
+      "id": "Microbiome transmission",
+      "nodes": ["Microbiome", "Behavior", "Development", "Environment", "Trait"],
+      "edges": [
+        {"source": "Microbiome", "target": "Trait", "relation": "enables development of"},
+        {"source": "Behavior", "target": "Microbiome", "relation": "enables transmission of"},
+        {"source": "Development", "target": "Microbiome", "relation": "enables transmission of"},
+        {"source": "Environment", "target": "Trait", "relation": "createsSelectionof"}
+      ]
+    },
+    {
+      "id": "Frequency-dependent selection",
+      "nodes": ["Frequency of trait A", "Trait A"],
+      "edges": [
+        {"source": "Frequency of trait A", "target": "Trait A", "relation": "influences selection of"}
+      ]
+    },
+    {
+      "id": "Multilevel selection",
+      "nodes": ["Competition between groups", "Cooperative groups", "Competition within groups", "Selfish traits", "Cooperative traits"],
+      "edges": [
+        {"source": "Competition between groups", "target": "Cooperative groups", "relation": "createsSelectionof"},
+        {"source": "Competition within groups", "target": "Selfish traits", "relation": "createsSelectionof"},
+        {"source": "Cooperative groups", "target": "Cooperative traits", "relation": "createsSelectionof"},
+        {"source": "Cooperative traits", "target": "Cooperative groups", "relation": "enable"}
+      ]
+    },
+    {
+      "id": "Cultural multilevel selection",
+      "nodes": ["Culture", "Cooperative trait", "Competition between groups", "Cooperative groups", "Cooperative traits"],
+      "edges": [
+        {"source": "Culture", "target": "Cooperative trait", "relation": "influences development of"},
+        {"source": "Culture", "target": "Cooperative trait", "relation": "createsSelectionof"},
+        {"source": "Competition between groups", "target": "Cooperative groups", "relation": "createsSelectionof"},
+        {"source": "Cooperative groups", "target": "Cooperative traits", "relation": "createsSelectionof"},
+        {"source": "Cooperative traits", "target": "Cooperative groups", "relation": "enable"}
+      ]
+    },
+    {
+      "id": "Agential causation",
+      "nodes": ["Agent", "Environment", "Body", "Goals", "Behavior", "Goal", "Preference", "Memory"],
+      "edges": [
+        {"source": "Agent", "target": "Environment", "relation": "senses"},
+        {"source": "Agent", "target": "Body", "relation": "senses"},
+        {"source": "Agent", "target": "Environment", "relation": "models"},
+        {"source": "Agent", "target": "Goals", "relation": "has"},
+        {"source": "Goals", "target": "Behavior", "relation": "motivate"},
+        {"source": "Behavior", "target": "Environment", "relation": "influences"},
+        {"source": "Agent", "target": "Environment", "relation": "predicts"},
+        {"source": "Agent", "target": "Behavior", "relation": "learns"},
+        {"source": "Agent", "target": "Goal", "relation": "has"},
+        {"source": "Agent", "target": "Preference", "relation": "has"},
+        {"source": "Agent", "target": "Memory", "relation": "has"}
+      ]
+    }
+  ]
+}
